@@ -144,7 +144,7 @@ header .navbar .dropdown-menu:before {
   border-width: 10px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 199.98px) {
   header .navbar .dropdown-menu:before {
     display: none;
   }
@@ -1080,7 +1080,7 @@ textarea.form-control {
 }
 
 .site-footer {
-  padding: 5em 0;
+  padding: 2em 0;
   background: #f2f2f2;
   font-size: 16px;
 }

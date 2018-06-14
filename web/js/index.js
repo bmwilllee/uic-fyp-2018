@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 
 	//open modal
 	$main_nav.on('click', function(event){
-  $("body").css({overflow:"hidden"}); 
+  $("body").css({overflow:"hidden"});
 		if( $(event.target).is($main_nav) ) {
 			// on mobile open the submenu
 			$(this).children('ul').toggleClass('is-visible');
@@ -29,6 +29,7 @@ jQuery(document).ready(function($){
 
 	//close modal
 	$('.cd-user-modal').on('click', function(event){
+		  $("body").css({overflow:"auto"});
 		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
 			$form_modal.removeClass('is-visible');
 		}
