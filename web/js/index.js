@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 
 	//open modal
 	$main_nav.on('click', function(event){
-
+  $("body").css({overflow:"hidden"}); 
 		if( $(event.target).is($main_nav) ) {
 			// on mobile open the submenu
 			$(this).children('ul').toggleClass('is-visible');
@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 			// on mobile close submenu
 			$main_nav.children('ul').removeClass('is-visible');
 			//show modal layer
-			$form_modal.addClass('is-visible');	
+			$form_modal.addClass('is-visible');
 			//show the selected form
 			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
 		}
@@ -31,7 +31,7 @@ jQuery(document).ready(function($){
 	$('.cd-user-modal').on('click', function(event){
 		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
 			$form_modal.removeClass('is-visible');
-		}	
+		}
 	});
 	//close modal when clicking the esc keyboard button
 	$(document).keyup(function(event){
@@ -50,14 +50,14 @@ jQuery(document).ready(function($){
 	$('.hide-password').on('click', function(){
 		var $this= $(this),
 			$password_field = $this.prev('input');
-		
+
 		( 'password' == $password_field.attr('type') ) ? $password_field.attr('type', 'text') : $password_field.attr('type', 'password');
 		( 'Hide' == $this.text() ) ? $this.text('Show') : $this.text('Hide');
 		//focus and move cursor to the end of input field
 		$password_field.putCursorAtEnd();
 	});
 
-	//show forgot-password form 
+	//show forgot-password form
 	$forgot_password_link.on('click', function(event){
 		event.preventDefault();
 		forgot_password_selected();
@@ -91,7 +91,7 @@ jQuery(document).ready(function($){
 		$form_forgot_password.addClass('is-selected');
 	}
 
-	//REMOVE THIS - it's just to show error messages 
+	//REMOVE THIS - it's just to show error messages
 	$form_login.find('input[type="submit"]').on('click', function(event){
 		event.preventDefault();
 		$form_login.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
