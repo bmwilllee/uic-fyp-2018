@@ -29,8 +29,10 @@ jQuery(document).ready(function($){
 
 	//close modal
 	$('.cd-user-modal').on('click', function(event){
-		  $("body").css({overflow:"auto"});
-		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
+
+		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') )
+		{
+					  $("body").css({overflow:"auto"});
 			$form_modal.removeClass('is-visible');
 		}
 	});
@@ -44,7 +46,9 @@ jQuery(document).ready(function($){
 	//switch from a tab to another
 	$form_modal_tab.on('click', function(event) {
 		event.preventDefault();
+
 		( $(event.target).is( $tab_login ) ) ? login_selected() : signup_selected();
+
 	});
 
 	//hide or show password
@@ -84,6 +88,7 @@ jQuery(document).ready(function($){
 		$form_forgot_password.removeClass('is-selected');
 		$tab_login.removeClass('selected');
 		$tab_signup.addClass('selected');
+		$("body").css({overflow:"hidden"});
 	}
 
 	function forgot_password_selected(){
