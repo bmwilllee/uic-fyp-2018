@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Voyage国际义工旅行</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <!-- login or sign up -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+    <!--
+          <a class="navbar-brand" href="index.html">Voyage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  -->
+          <nav class="main-nav">
+            <ul>
+              <a class="navbar-brand" href="index.html">Voyage</a>
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html">目的地</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">旅行故事</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">关于我们</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">联系我们</a>
+              </li>
+              <li class="nav-item">
+                <a class="cd-signin" href="#">登陆/注册</a>
+              </li>
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+    <!-- login/signup page -->
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+      <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+          <li><a href="#0">登陆</a></li>
+          <li><a href="#0">注册</a></li>
+        </ul>
+        <div id="cd-login"> <!-- log in form -->
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="signin-email">电子邮箱</label>
+              <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+            <p class="fieldset">
+              <label class="image-replace cd-password" for="signin-password">密码</label>
+              <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+              <a href="#0" class="hide-password">Hide</a>
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+            <p class="fieldset">
+              <input type="checkbox" id="remember-me" checked>
+              <label for="remember-me">记住我的账户</label>
+            </p>
+            <p class="fieldset">
+              <input class="full-width" type="submit" value="Login">
+            </p>
+          </form>
+          <p class="cd-form-bottom-message"><a href="#0">忘记密码？?</a></p>
+          <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-login -->
+
+        <div id="cd-signup"> <!-- sign up form -->
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-username" for="signup-username">账户名</label>
+              <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="signup-email">E-电子邮箱</label>
+              <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-password" for="signup-password">密码</label>
+              <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+              <a href="#0" class="hide-password">隐藏</a>
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <input type="checkbox" id="accept-terms">
+              <label for="accept-terms">我同意该<a href="terms.html">服务条款</a></label>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding" type="submit" value="Create account">
+            </p>
+          </form>
+
+          <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-signup -->
+
+        <div id="cd-reset-password"> <!-- reset password form -->
+          <p class="cd-form-message">丢失了您的密码？请输入您的电子邮箱地址，您将接收到一封邮件指导您去就改密码。</p>
+
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="reset-email">E-mail</label>
+              <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding" type="submit" value="Reset password">
+            </p>
+          </form>
+
+          <p class="cd-form-bottom-message"><a href="#0">回到登陆界面</a></p>
+        </div> <!-- cd-reset-password -->
+        <a href="#0" class="cd-close-form">关闭</a>
+      </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
+  <!-- END login/signup page -->
+    <section class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/sri_1.jpg);">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-8 text-center">
+            <div class="mb-5 element-animate">
+              <h1>印度尼西亚</h1>
+              <p>Indonesia</p>
+              <span>
+                <img>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <div class="container">
+    <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <nav id="navbar-example2" class="navbar navbar-light">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#item-1">国家概况</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item-2">当地气候</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item-3">签证</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+
+    <section class="slider-wrap site-section">
+        <div class="row">
+          <div class="col-md-8 element-animate">
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <h3 id="item-1">国家概况</h3>
+              <p class="lead">
+印度尼西亚共和国（Republik Indonesia），简称印度尼西亚或印尼，为东南亚国家之一；由上万个岛屿组成，是全世界最大的群岛国家，疆域横跨亚洲及大洋洲，别称“千岛之国”。共有13677个岛，像一串珍珠散布在珊瑚海中，面积190万平方公里，横跨赤道，处在亚澳两洲之间，濒临印度洋和太平洋，曾是兵家必争之地。印尼盛产香料，如丁香、豆蔻、檀香等。印尼全境拥有4,500 多座火山，是世界上现存火山最多的国家，也因此造就了印尼十分独特的地质现象。从苏门达腊西岸经爪哇、巴厘、摩鹿加群岛的邦达岛（Banda）到苏拉维西北部，一路均是延绵成背脊般的火山。爪哇为印尼的中心，也是人口最多的一个岛，首都雅加达即位于此岛的西北岸。巴厘岛有“天堂岛”等美称，这里自然风光引人入胜，是天然的度假胜地。中爪哇的千年古塔婆罗浮屠佛塔和甫兰班南印度教陵庙群，均被联合国教科文组织列入世界文化遗产名录。</p>
+              <figure class="figure">
+                <img src="images/indon_1.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+              </figure>
+              <h4 id="item-2">当地气候</h4>
+              <p>6月至9月为最佳旅游时间。该段时间降水相对较少，旅游时要注意避开斋月，此时多数餐馆整天不营业。斋月结束后的两天，旅馆大多客满，价格也很贵。 印尼地处赤道，常年气候炎热，属热带雨林气候，高温、多雨、潮湿，雨季为每年10月-次年4月，年平均气温25-27度。</p>
+              <figure class="figure">
+                <img src="images/indon_2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+              </figure>
+              <h4 id="item-3">签证</h4>
+              <p>1.中国公民持外交、公务护照可免签入境印尼，停留最长不超过30天；持公务普通和普通护照人员应提前办理签证。</p>
+              <p>2.2005年8月，印尼政府允许中国（大陆）公民在印尼机场、港口的开放口岸办理落地签证（VISA ON ARRIVAL）。</p>
+              <p>3.印尼移民法规严厉，入境外国公民应遵守印尼的法规，不得从事与签证目的不符的事情，如非法工作、经商、从医等。</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="element-animate">当地项目</h3>
+          <div class="col-md-12 element-animate">
+            <a href="program.html" class="img-bg" style="background-image: url('images/indon_3.jpg')">
+              <div class="text">
+                <h2>印度尼西亚</h2>
+                <p>去报名</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- END section -->
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h3 class="mb-4">About</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, quod!</p>
+            <ul class="list-unstyled ">
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-location"></span></span><span class="">34 Street Name, City Name Here, United States</span></li>
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-telephone"></span></span><span class="">+1 242 4942 290</span></li>
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-email"></span></span><span class="">info@yourdomain.com</span></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3 class="mb-4">Links</h3>
+            <ul class="list-unstyled ">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="mb-4">Latest Blog</h3>
+            <ul class="list-unstyled blog-entry-footer">
+              <li><a href="#">
+                <span class="post-meta">March 20, 2018</span>
+                <h3>7 Best Destination in The World</h3></a>
+              </li>
+              <li><a href="#">
+                <span class="post-meta">March 20, 2018</span>
+                <h3>4 Hour Work Week And The Rest Is Travel</h3></a>
+              </li>
+              <li><a href="#">
+                <span class="post-meta">March 20, 2018</span>
+                <h3>Why You Should Travel Today</h3></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Connect</h3>
+            <p>
+              <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+              <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+              <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>

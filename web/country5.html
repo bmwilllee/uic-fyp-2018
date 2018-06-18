@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Voyage国际义工旅行</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <!-- login or sign up -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+    <!--
+          <a class="navbar-brand" href="index.html">Voyage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  -->
+          <nav class="main-nav">
+            <ul>
+              <a class="navbar-brand" href="index.html">Voyage</a>
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html">目的地</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">旅行故事</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">关于我们</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">联系我们</a>
+              </li>
+              <li class="nav-item">
+                <a class="cd-signin" href="#">登陆/注册</a>
+              </li>
+              <li class="nav-item">
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+    <!-- login/signup page -->
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+      <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+          <li><a href="#0">登陆</a></li>
+          <li><a href="#0">注册</a></li>
+        </ul>
+        <div id="cd-login"> <!-- log in form -->
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="signin-email">电子邮箱</label>
+              <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+            <p class="fieldset">
+              <label class="image-replace cd-password" for="signin-password">密码</label>
+              <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+              <a href="#0" class="hide-password">Hide</a>
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+            <p class="fieldset">
+              <input type="checkbox" id="remember-me" checked>
+              <label for="remember-me">记住我的账户</label>
+            </p>
+            <p class="fieldset">
+              <input class="full-width" type="submit" value="Login">
+            </p>
+          </form>
+          <p class="cd-form-bottom-message"><a href="#0">忘记密码？?</a></p>
+          <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-login -->
+
+        <div id="cd-signup"> <!-- sign up form -->
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-username" for="signup-username">账户名</label>
+              <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="signup-email">E-电子邮箱</label>
+              <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-password" for="signup-password">密码</label>
+              <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+              <a href="#0" class="hide-password">隐藏</a>
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <input type="checkbox" id="accept-terms">
+              <label for="accept-terms">我同意该<a href="terms.html">服务条款</a></label>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding" type="submit" value="Create account">
+            </p>
+          </form>
+
+          <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-signup -->
+
+        <div id="cd-reset-password"> <!-- reset password form -->
+          <p class="cd-form-message">丢失了您的密码？请输入您的电子邮箱地址，您将接收到一封邮件指导您去就改密码。</p>
+
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="reset-email">E-mail</label>
+              <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">错误信息！</span>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding" type="submit" value="Reset password">
+            </p>
+          </form>
+
+          <p class="cd-form-bottom-message"><a href="#0">回到登陆界面</a></p>
+        </div> <!-- cd-reset-password -->
+        <a href="#0" class="cd-close-form">关闭</a>
+      </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
+  <!-- END login/signup page -->
+
+    <section class="site-hero site-hero-innerpage overlay" data-stellar-background-ratio="0.5" style="background-image: url(images/sri_1.jpg);">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-8 text-center">
+            <div class="mb-5 element-animate">
+              <h1>老挝</h1>
+              <p>Lao</p>
+              <span>
+                <img>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+
+    <div class="container">
+    <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <nav id="navbar-example2" class="navbar navbar-light">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#item-1">国家概况</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item-2">当地气候</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#item-3">签证</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+
+    <section class="slider-wrap site-section">
+        <div class="row">
+          <div class="col-md-8 element-animate">
+            <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+              <h3 id="item-1">国家概况</h3>
+              <p class="lead">老挝位于亚洲中南半岛的东部，是东南亚唯一的内陆国家。境内山峦起伏，森林密布。动物中大象为多，故老挝有“万象之都”的美称。自然风光与独特的风情，迷醉了旅游者。</p>
+              <figure class="figure">
+                <img src="images/lao_3.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+              </figure>
+              <h4 id="item-2">当地气候</h4>
+              <p>老挝是热带海洋气候，全年如夏，年平均气温28度，无四季之分。11月-次年3月是老挝旅行的最佳时间，气候最为凉爽，适合旅行。老挝属于热带季风气候，气温高，全年分为旱季和雨季，南北气温相差不大。 每年5月-10月为雨季，平均气温为24.2摄氏度，雨水充沛，气候炎热而湿润，河水上涨道路泥泞，交通不便。11月至次年4月为旱季，平均气温27.3摄氏度，受干燥凉爽的东北风影响，几乎不降雨，平原地区常有旱情，全年4月份最热，月平均气温为29摄氏度，12月份最凉，月平均气温淡24摄氏度，最低为18摄氏度。 由于老挝空气清新，污染很少，而且在城市中和郊外视野都非常开阔，下雨之前远方平原多条闪电同时贯穿天地之间，而雨后经常可以见到美丽的彩虹。</p>
+              <figure class="figure">
+                <img src="images/lao_1.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+              </figure>
+              <h4 id="item-3">签证</h4>
+              <p>1. 中国公民持外交、公务和公务普通护照可免签入境老挝。</p>
+              <p>2. 中国公民持因私普通护照前往老挝，须到老挝驻中国大使馆、驻南宁总领事馆、驻昆明总领事馆及其驻云南西双版纳景洪领事办公室申请签证。中国公民持6个月以上护照也可在老挝全境国家级口岸办理落地签证，最多停留30天。</p>
+              <p>3. 老挝驻外使（领）馆为申请人颁发一次入境、停留期30天的签证。</p>
+              <p>4. 商务、学生、工作（劳务）、工作（公司、企业聘请的专家、顾问）签证须由在老挝注册的公司和项目单位向老挝外交部和老挝劳动社会福利部申请，批准后由老挝外交部领事司通知驻外使（领）馆颁发。</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="element-animate">当地项目</h3>
+          <div class="col-md-12 element-animate">
+            <a href="program.html" class="img-bg" style="background-image: url('images/lao_2.jpg')">
+              <div class="text">
+                <h2>老挝</h2>
+                <p>去报名</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- END section -->
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h3 class="mb-4">关于我们</h3>
+            <p class="mb-4">Voyage国际义工旅行网作为信息咨询平台，我们专注为青年伙伴提供国际义工旅行机会并勇敢地承担责任，我们会让您享受最舒适的旅行。如果您对于旅行有任何问题，请在第一时间联系我们。</p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="mb-4">联系方式</h3>
+            <ul class="list-unstyled ">
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-location"></span></span><span class="">香洲区唐家湾镇北京师范大学香港浸会大学联合国际学院, 珠海,中国</span></li>
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-telephone"></span></span><span class="">+1 242 4942 290</span></li>
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-email"></span></span><span class="">Voyage@gmail.com</span></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h3 class="mb-4">链接</h3>
+            <ul class="list-unstyled ">
+              <li><a href="about.html">关于我们</a></li>
+              <li><a href="destination.html">目的地</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END footer -->
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
