@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 验证输入重复密码的简单js,但是还没试过-->
+    <script type="text/javascript">
+    function checkPass(){
+    var pwd1=document.getElementById("p1").value;
+    var pwd2=document.getElementById("p2").value;
+    if(pwd1!=pwd2){
+    document.getElementById("errorpwd").style.display = "block";
+    return false;
+    }
+    }
+    </script>
+    <title>Voyage国际义工旅行-用户登录</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Voyage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">主页</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destination.html">目的地</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">旅行故事</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">关于我们</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">联系我们</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">登陆／注册</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+    <!-- END section -->
+    <section >
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center">
+            <div class="wrapper">
+        	    <form id="data" class="form-signin" method="post">
+        	      <h2 class="form-signin-heading">注册页面</h2>
+                <div class="form-group">
+                  <div align= "left" >
+                  <label for="exampleInputEmail1">如何称呼您：</label>
+                  </div>
+                  <input class="form-control" id="exampleInputEmail1" placeholder="输入您的姓名">
+                </div>
+                  <div class="form-group">
+                    <div align= "left" >
+                    <label for="exampleInputEmail1">邮箱地址：</label>
+                    </div>
+                    <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="输入邮箱地址">
+                  </div>
+                  <div class="form-group">
+                    <div align= "left" >
+                    <label for="exampleInputEmail1">手机号码：</label>
+                    </div>
+                    <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="输入大陆手机号码，如:1350123443">
+                  </div>
+                  <div class="form-group">
+                    <div align= "left" >
+                    <label for="exampleInputEmail1">登陆密码：</label>
+                    </div>
+                    <input type="password" class="form-control" id="p1" placeholder="输入6-24位数字或字母，区分大小写">
+                  </div>
+                  <div class="form-group">
+                    <div align= "left" >
+                    <label for="exampleInputEmail1">再次输入您的密码:</label>
+                    </div>
+                    <input type="password" class="form-control" id="p2" placeholder="确认密码">
+                  </div>
+                    <!--警告-->
+                    <span id="errorpwd" style="display:none;">两次输入密码不一致</span>
+                    <!--end警告-->
+        	        <button class="btn btn-lg btn-success btn-block" type="submit">注册</button>
+                <p style="padding-top:20px;">已经有账户？ 点击 <a href="login.html">这里</a> 登陆.</p>
+        	    </form>
+        	  </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+    <!-- loader -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
