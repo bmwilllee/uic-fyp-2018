@@ -31,7 +31,7 @@
                 <a class="nav-link" href="destination.html">目的地</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">旅行故事</a>
+                <a class="nav-link" href="http://www.hiwilllee.com/wordpress1/">旅行故事</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">关于我们</a>
@@ -108,15 +108,15 @@
                 <label for="inputEmail3" class="col-sm-4 col-form-label">出生日期</label>
                 <div class="row">
                   <div class="col-md-6 col-sm-6">
-                    <select id="inputState" class="form-control">
+                    <select id="Selyear" class="form-control">
                     </select>
                   </div>
                   <div class="col-md-3 col-sm-3">
-                    <select id="inputState" class="form-control">
+                    <select id="Selmonth" class="form-control">
                     </select>
                   </div>
                   <div class="col-md-3 col-sm-3">
-                    <select id="inputState" class="form-control">
+                    <select id="Selday" class="form-control">
                     </select>
                   </div>
                 </div>
@@ -215,16 +215,52 @@
     <!-- END footer -->
 
     <!-- loader -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
-
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+      onload = function(){
+
+        var year = new Date().getFullYear();
+        var selYear = document.getElementById("Selyear");
+        var selMonth = document.getElementById("Selmonth");
+        var selDay = document.getElementById("Selday")
+
+        for(var i=1970; i<year; i++){
+          var option = document.createElement('option');
+          option.value = i;
+          var txt = document.createTextNode(i);
+          option.appendChild(txt);
+          selYear.appendChild(option);
+        }
+
+        for(var j=1; j<=12; j++){
+          var option = document.createElement('option');
+          option.value = j;
+          var txt = document.createTextNode(j);
+          option.appendChild(txt);
+          selMonth.appendChild(option);
+        }
+
+        for(var k = 1; k<=31; k++){
+          var option = document.createElement('option');
+          option.value = k;
+          var txt = document.createTextNode(k);
+          option.appendChild(txt);
+          selDay.appendChild(option);
+        }
+      }
+    </script>
     <script type="text/javascript">
 
     </script>
+
   </body>
 </html>
